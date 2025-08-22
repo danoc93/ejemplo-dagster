@@ -121,6 +121,7 @@ def generar_reporte(nombres_por_persona: pd.DataFrame) -> int:
 ```
 
 > Esto crea una automatizacion, pero revisa como crear un Job o Schedule para agrupar a estos assets de manera mas efectiva.
+> Siempre activa las automatizaciones en la UI.
 
 ---
 
