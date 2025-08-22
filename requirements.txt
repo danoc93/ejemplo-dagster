@@ -1,0 +1,5 @@
+  pandas
+  create-dagster
+  dagster
+  dagster-webserver
+  dagster-dg-cli
