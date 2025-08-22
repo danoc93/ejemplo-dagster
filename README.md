@@ -48,11 +48,11 @@ Pasos si usas GitHub Codespaces (de 0 a UI)
 
 ---
 
-# 3) Construye el flujo de ejemplo (assets + checks + automation)
+## Construye el flujo de ejemplo (assets + checks + automation)
 
 **Objetivo:** `clientes → nombres_preparados → nombres_por_persona → cuentas_todas_positivas (check) → generar_reporte`
 
-### 3.1. Prepara un CSV de ejemplo
+### Prepara un CSV de ejemplo
 
 Descarga **customers-100.csv** y colócalo en tu repo (p.ej. `/workspaces/ejemplo/customers-100.csv` dentro del Codespace):
 
@@ -63,7 +63,7 @@ curl -L -o customers-100.csv \
 
 (Conjuntos de ejemplo mantenidos por Datablist.) ([datablist.com][11], [GitHub][12])
 
-### 3.2. Usa el siguiente código en `assets.py`
+### Usa el siguiente código en `assets.py`
 
 Tu código ya incluye:
 
@@ -124,7 +124,7 @@ def generar_reporte(nombres_por_persona: pd.DataFrame) -> int:
 
 ---
 
-# 4) Observar en la UI
+## Observar en la UI
 
 * **Materializar `clientes`** (o esperar al cron), ver **lineage** y dependencias. ([docs.dagster.io][8])
 * **Ver metadata** agrega metadatos usando `context` en todos los assets `nombres_preparados`. 
